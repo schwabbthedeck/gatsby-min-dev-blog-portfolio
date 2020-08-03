@@ -1,11 +1,5 @@
 /* header styles */
-.header, .navbar-dark .navbar-nav .nav-link {
+.header, .header .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
-/* header icon styles */
-/* .header .icon {
-  margin-top: 3px;
-}
-.header .gitfork-icon {
-  margin-top: 6px;
-} */
+
