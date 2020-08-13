@@ -13,8 +13,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
-import "./header.css"
-import "./footer.css"
+import "./styles.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,7 +37,7 @@ const Layout = ({ children }) => {
           minHeight: `85vh`
         }}
       >
-        <main>{children}</main>
+        <main className="pt-3 pb-3">{children}</main>
       </div>
       <Footer />
     </>

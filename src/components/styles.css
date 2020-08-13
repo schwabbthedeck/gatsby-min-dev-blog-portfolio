@@ -1,3 +1,8 @@
+/* header styles */
+.header, .header .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
 /* footer styles */
 .footer {
   font-size: 0.9em;
@@ -17,3 +22,6 @@
   padding: 0.5em 0;
   color: rgba(255,255,255,.5);
 }
+
+/* general styles */
+
