@@ -4,9 +4,8 @@
 }
 
 /* footer styles */
-.footer {
+.footer, .footer .navbar-brand  {
   font-size: 0.9em;
-  /* color: #fff; */
 }
 
 .footer .navbar-brand a {
