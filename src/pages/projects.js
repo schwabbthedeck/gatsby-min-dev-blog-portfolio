@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ProjectCard from "../components/projectcard"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Fade from 'react-reveal/Fade';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import ProjectCard from "../components/projectcard";
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -55,11 +55,12 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <h1>Projects</h1>
+      <Fade top>
+        <h1>Projects</h1>
+      </Fade>
       {projects.map((project, index) =>
         <ProjectCard key={index} project={project}></ProjectCard>
       )}
-      <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
