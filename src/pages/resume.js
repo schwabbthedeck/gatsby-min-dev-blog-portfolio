@@ -1,8 +1,8 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
-import { Link } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from "react"
+import { Row, Col } from "react-bootstrap"
+import { Link } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 // TODO import SVGs
 

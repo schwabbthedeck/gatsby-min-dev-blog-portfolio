@@ -1,8 +1,8 @@
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
-import Layout from '../components/Layout'
-import { Row, Col, Button } from 'react-bootstrap'
+import Layout from '../components/layout'
+import { Row, Col } from 'react-bootstrap'
 import { format } from 'date-fns'
 
 export default ({ data, pageContext }) => {
@@ -42,6 +42,7 @@ export default ({ data, pageContext }) => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query PostsBySlug($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {

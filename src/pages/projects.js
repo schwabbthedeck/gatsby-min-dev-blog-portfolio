@@ -1,9 +1,8 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Fade from 'react-reveal/Fade';
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import ProjectCard from "../components/projectcard";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import ProjectCard from "../components/projectcard"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -63,4 +62,4 @@ const ProjectsPage = () => {
   )
 }
 
-export default ProjectsPage;
+export default ProjectsPage
