@@ -7,46 +7,15 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 // import Dump from "../components/dump";
 
-const IndexWrapper = styled.main``
-const PostWrapper = styled.div``
+// const IndexWrapper = styled.main``
+// const PostWrapper = styled.div``
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <IndexWrapper>
-      {data.allMdx.nodes.map(
-        ({ id, excerpt, frontmatter, fields }) => (
-          <PostWrapper key={id}>
-            <Link to={fields.slug}>
-              <h1>{frontmatter.title}</h1>
-              <p>{frontmatter.date}</p>
-              <p>{excerpt}</p>
-            </Link>
-          </PostWrapper>
-        )
-      )}
-    </IndexWrapper>
+    <h1>Home</h1>
+    <h3>Under construction</h3>
   </Layout>
 )
-export default IndexPage
 
-export const query = graphql`
-  query SITE_INDEX_QUERY {
-    allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { published: { eq: true } } }
-    ) {
-      nodes {
-        id
-        excerpt(pruneLength: 250)
-        frontmatter {
-          title
-          date
-        }
-        fields {
-          slug
-        }
-      }
-    }
-  }
-`
+export default IndexPage

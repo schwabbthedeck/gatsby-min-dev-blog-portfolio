@@ -9,15 +9,11 @@ export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx
   const { previous, next } = pageContext
   const date = format(new Date(frontmatter.date), "PPP")
-  const dateStyles = {
-    fontSize: '0.85em',
-    marginTop: '-1rem',
-    padding: '0.5rem'
-  }
+
   return (
     <Layout>
       <h1>{frontmatter.title}</h1>
-      <p style={dateStyles}>{date}</p>
+      <p className="date-subheading">{date}</p>
       <MDXRenderer>{body}</MDXRenderer>
       <Row style={{ paddingTop: '4rem' }}>
         <Col>

@@ -55,9 +55,7 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <Fade top>
-        <h1>Projects</h1>
-      </Fade>
+      <h1>Projects</h1>
       {projects.map((project, index) =>
         <ProjectCard key={index} project={project}></ProjectCard>
       )}
