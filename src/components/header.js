@@ -1,6 +1,6 @@
-import React from "react"
-import { Container, Navbar, Nav } from "react-bootstrap"
-import { Link } from "gatsby"
+import React from 'react'
+import { Container, Navbar, Nav } from 'react-bootstrap'
+import { Link } from 'gatsby'
 
 // TODO move svg icons from file to somewhere else and import them...
 

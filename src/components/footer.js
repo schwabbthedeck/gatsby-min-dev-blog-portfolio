@@ -1,6 +1,6 @@
-import React from "react"
-import { Container, Row, Col, Navbar, Nav } from "react-bootstrap"
-import { Link } from "gatsby"
+import React from 'react'
+import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
+import { Link } from 'gatsby'
 
 export default () => (
   <Container fluid className="footer px-0">
