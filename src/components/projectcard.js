@@ -1,7 +1,6 @@
-import React from "react";
-import { Row, Col, Button } from "react-bootstrap";
-import Img from "gatsby-image";
-import Fade from 'react-reveal/Fade';
+import React from 'react'
+import { Row, Col, Button } from 'react-bootstrap'
+import Img from 'gatsby-image'
 
 // props:
 /* 
