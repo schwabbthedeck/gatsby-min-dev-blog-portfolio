@@ -1,36 +1,43 @@
 import React from "react"
-import { Container, Navbar, Nav } from "react-bootstrap"
+import { Container, Row, Col, Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 
 export default () => (
   <Container fluid className="footer px-0">
-    {/* <footer> */}
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand className="pl-5 nav-links">
-        © 2020, Built with 
+      <Row style={{ minWidth: '100%' }}>
+        <Col md={2}>
+          <Navbar.Brand className="nav-links">
+            © 2020, Built with
           {` `}
-        <a title="Gatsby" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
-      </Navbar.Brand>
-      <Navbar.Collapse className="justify-content-end">
-        <Nav className="pr-3 mr-4 nav-links">
+            <a title="Gatsby" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
+          </Navbar.Brand>
+        </Col>
+        <Col md={1}></Col>
+        <Col md={2}>
           <Nav.Link as={Link} to="/" title="Latest Posts">
             Latest Posts
-          </Nav.Link>
-          <span className="divider">|</span>
+              </Nav.Link>
+        </Col>
+        <span className="divider">|</span>
+        <Col md={2}>
           <Nav.Link title="GitHub" href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
             GitHub
-          </Nav.Link>
-          <span className="divider">|</span>
+              </Nav.Link>
+        </Col>
+        <span className="divider">|</span>
+        <Col md={2}>
           <Nav.Link title="Twitter" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
             Twitter
-          </Nav.Link>
-          <span className="divider">|</span>
+              </Nav.Link>
+        </Col>
+        <span className="divider">|</span>
+        <Col md={2}>
           <Nav.Link title="Facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             Facebook
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+              </Nav.Link>
+        </Col>
+      </Row>
     </Navbar>
-    {/* </footer> */}
   </Container>
 )
