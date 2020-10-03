@@ -10,11 +10,12 @@
   font-size: 0.9em;
 }
 
-.footer .navbar-brand a {
+.footer .navbar-brand a, .footer .nav-link {
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
-.footer .navbar-brand a:hover {
+.footer .navbar-brand a:hover, .footer .nav-link:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -63,3 +64,22 @@ a {
 .blog-post-list-item .card-title {
   color: rgba(0, 0, 0, 0.8);
 }
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... } */
+
+/*  Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .footer .divider {
+    display: none;
+  }
+  .footer .nav-link {
+    text-align: left;
+  }
+ }
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
