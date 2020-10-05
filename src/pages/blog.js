@@ -40,7 +40,7 @@ const BlogPage = ({ data }) => {
 export default BlogPage
 
 export const query = graphql`
-  query SITE_INDEX_QUERY {
+  query SITE_BLOG_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC },
       filter: { frontmatter: { published: { eq: true } } },
