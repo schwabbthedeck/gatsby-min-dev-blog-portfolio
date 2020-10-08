@@ -62,6 +62,27 @@ a {
   border-color: #752f45;
 }
 
+/* home page styles */
+.credit-list {
+  margin-left: 0;
+}
+.credit-list li {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #aa4465;
+  border-radius: 10px;
+}
+.credit-list li a {
+  color: #fff;
+}
+.credit-list li:hover {
+  background-color: #752f45;
+}
+.credit-list li a:hover {
+  text-decoration: none;
+}
+
 /* blog styles - post and listing page */
 .date-subheading {
   font-size: 0.85em;
