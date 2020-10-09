@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Minimal Dev Blog Portfolio Starter`,
     description: `A simple Gatsby starter used for a developer blog and portfolio site.`,
-    siteUrl: `https://thelocalhost.io`,
+    siteUrl: `https://gatsby-min-dev-blog-portfolio.netlify.app/`,
     siteLanguage: `en-us`,
     siteLocale: `en_us`,
     author: `SchwabTheDeck`,
