@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import SmallHero from '../components/homehero'
 import { Row, Col } from 'react-bootstrap'
 import ProjectImage from '../components/image'
+import BlogPostCard from '../components/blogpostcard'
 import { format } from 'date-fns'
 
 const IndexPage = ({ data }) => {
@@ -36,21 +36,7 @@ const IndexPage = ({ data }) => {
               const date = format(new Date(frontmatter.date), "PPP")
               return (
                 <Col md={4}>
-
-                  <div className="blog-post-list-item card" key={id}>
-
-                    <div className="card-body">
-                      <Link to={fields.slug}>
-                        <h2 className="card-title">{frontmatter.title}</h2>
-                      </Link>
-                      <p className="date-subheading">{date}</p>
-                      <p className="card-text">{excerpt}</p>
-                      <Link to={fields.slug}>
-                        <button className="btn btn-primary">Read more</button>
-                      </Link>
-                    </div>
-
-                  </div>
+                  <BlogPostCard title={frontmatter.title} date={date} fields={fields} excerpt={excerpt} id={id}></BlogPostCard>
                 </Col>
               )
             }
@@ -60,7 +46,7 @@ const IndexPage = ({ data }) => {
           <Col>
             <h1>Credits</h1>
             <p>Thanks to the following sites for providing illustrations, icons, inspiration, and guidance in building this starter:</p>
-            <ul>
+            <ul className="credit-list">
               <li><a href="https://illlustrations.co/" target="_blank" rel="noopener noreferrer">Illustrations from illlustrations.co</a></li>
               <li><a href="https://css.gg/" target="_blank" rel="noopener noreferrer">CSS Icons: css.gg</a></li>
               <li><a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">More icons: ICONS8</a></li>

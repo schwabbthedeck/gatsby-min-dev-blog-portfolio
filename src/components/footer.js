@@ -13,15 +13,20 @@ export default () => (
             <a title="Gatsby" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
           </Navbar.Brand>
         </Col>
-        <Col md={1}></Col>
+        <Col md={1}>
+          <Nav.Link as={Link} to="/" title="Home">
+            Home
+              </Nav.Link>
+        </Col>
+        <span className="divider">|</span>
         <Col md={2}>
-          <Nav.Link as={Link} to="/" title="Latest Posts">
+          <Nav.Link as={Link} to="/blog" title="Latest Posts">
             Latest Posts
               </Nav.Link>
         </Col>
         <span className="divider">|</span>
         <Col md={2}>
-          <Nav.Link title="GitHub" href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
+          <Nav.Link title="GitHub repository" href="https://github.com/schwabthedeck/gatsby-min-dev-blog-portfolio" target="_blank" rel="noopener noreferrer">
             GitHub
               </Nav.Link>
         </Col>
